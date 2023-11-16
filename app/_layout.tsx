@@ -2,6 +2,9 @@ import FontAwesome from "@expo/vector-icons/FontAwesome"
 import { useFonts } from "expo-font"
 import { SplashScreen, Stack } from "expo-router"
 import { useEffect } from "react"
+import { Text, View } from "react-native"
+import Colors from "../constants/Colors"
+import { SafeAreaView } from "react-native-safe-area-context"
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -42,8 +45,16 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    <Stack
+      screenOptions={{
+        header: () => (
+          <SafeAreaView style={{ backgroundColor: Colors.primary }}>
+            <Text style={{ color: "#fff" }}>Custom Header</Text>
+          </SafeAreaView>
+        ),
+      }}
+    >
+      <Stack.Screen name="(tabs)" options={{}} />
     </Stack>
   )
 }

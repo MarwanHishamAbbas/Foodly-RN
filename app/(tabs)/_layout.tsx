@@ -10,6 +10,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          headerShown: false,
           tabBarLabel: () => null,
           tabBarIcon: ({ focused }) =>
             focused ? (
@@ -35,6 +36,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="saved"
         options={{
+          headerShown: false,
+
           tabBarLabel: () => null,
           tabBarIcon: ({ focused }) =>
             focused ? (
@@ -60,6 +63,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="cart"
         options={{
+          headerShown: false,
+
           tabBarLabel: () => null,
           tabBarIcon: ({ focused }) =>
             focused ? (
@@ -85,6 +90,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="account"
         options={{
+          headerShown: false,
+
           tabBarLabel: () => null,
           tabBarIcon: ({ focused }) =>
             focused ? (
