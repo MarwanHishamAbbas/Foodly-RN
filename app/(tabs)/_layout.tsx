@@ -1,12 +1,14 @@
 import { Tabs } from "expo-router"
 import { StyleSheet, Text, View } from "react-native"
-
 import { Ionicons } from "@expo/vector-icons"
 import Colors from "../../constants/Colors"
 
 export default function TabLayout() {
   return (
-    <Tabs safeAreaInsets={{ right: 10, left: 10 }}>
+    <Tabs
+      sceneContainerStyle={{ backgroundColor: Colors.background }}
+      safeAreaInsets={{ right: 10, left: 10 }}
+    >
       <Tabs.Screen
         name="index"
         options={{
