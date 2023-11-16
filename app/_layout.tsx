@@ -3,7 +3,6 @@ import { useFonts } from "expo-font"
 import { SplashScreen, Stack } from "expo-router"
 import { useEffect } from "react"
 import CustomHeader from "@/components/layout/CustomHeader"
-import { View } from "react-native"
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -44,16 +43,17 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-    <Stack
-      screenOptions={{
-        header: () => <CustomHeader />,
-        headerShadowVisible: false,
-        contentStyle: {
-          marginTop: 65,
-        },
-      }}
-    >
-      <Stack.Screen name="(tabs)" options={{}} />
+    <Stack screenOptions={{}}>
+      <Stack.Screen
+        name="(tabs)"
+        options={{
+          header: () => <CustomHeader />,
+          headerShadowVisible: false,
+          contentStyle: {
+            marginTop: 80,
+          },
+        }}
+      />
     </Stack>
   )
 }

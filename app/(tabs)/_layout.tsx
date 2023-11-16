@@ -19,7 +19,7 @@ export default function TabLayout() {
               <View style={styles.tabItem}>
                 <Ionicons
                   name="md-home-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
                 <Text style={styles.tabText}>Home</Text>
@@ -28,7 +28,7 @@ export default function TabLayout() {
               <View>
                 <Ionicons
                   name="md-home-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
               </View>
@@ -46,7 +46,7 @@ export default function TabLayout() {
               <View style={styles.tabItem}>
                 <Ionicons
                   name="md-heart-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
                 <Text style={styles.tabText}>Saved</Text>
@@ -55,7 +55,7 @@ export default function TabLayout() {
               <View>
                 <Ionicons
                   name="md-heart-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
               </View>
@@ -73,7 +73,7 @@ export default function TabLayout() {
               <View style={styles.tabItem}>
                 <Ionicons
                   name="md-cart-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
                 <Text style={styles.tabText}>Cart</Text>
@@ -82,7 +82,7 @@ export default function TabLayout() {
               <View>
                 <Ionicons
                   name="md-cart-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
               </View>
@@ -100,7 +100,7 @@ export default function TabLayout() {
               <View style={styles.tabItem}>
                 <Ionicons
                   name="md-person-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
                 <Text style={styles.tabText}>Account</Text>
@@ -109,7 +109,7 @@ export default function TabLayout() {
               <View>
                 <Ionicons
                   name="md-person-outline"
-                  size={20}
+                  size={25}
                   color={Colors.primary}
                 />
               </View>
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.secondary,
     gap: 3,
     borderRadius: 50,
-    paddingHorizontal: 18,
+    paddingHorizontal: 15,
     paddingVertical: 6,
     flexWrap: "nowrap",
   },

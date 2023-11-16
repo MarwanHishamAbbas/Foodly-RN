@@ -23,7 +23,7 @@ const SearchBar = () => {
         </View>
         <Link href={"/"} asChild>
           <TouchableOpacity style={styles.optionBtn}>
-            <Ionicons name="options-outline" size={25} color={"#fff"} />
+            <Ionicons name="options-outline" size={30} color={"#fff"} />
           </TouchableOpacity>
         </Link>
       </View>
@@ -36,6 +36,7 @@ export default SearchBar
 const styles = StyleSheet.create({
   searchContainer: {
     height: 50,
+    backgroundColor: Colors.background,
   },
   searchSection: {
     flexDirection: "row",

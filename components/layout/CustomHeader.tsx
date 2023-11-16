@@ -30,7 +30,7 @@ const CustomHeader = () => {
         <TouchableOpacity style={styles.notificationBtn}>
           <Ionicons
             name="notifications-outline"
-            size={25}
+            size={30}
             color={Colors.primary}
           />
         </TouchableOpacity>
