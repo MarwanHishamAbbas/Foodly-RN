@@ -36,7 +36,6 @@ export default SearchBar
 const styles = StyleSheet.create({
   searchContainer: {
     height: 50,
-    marginTop: 10,
   },
   searchSection: {
     flexDirection: "row",
